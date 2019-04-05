@@ -9,7 +9,6 @@ with open(src_dir) as orifile, open('test.txt', "w") as newfile:
    orilines = orifile.readlines()
    for char in orilines:
       substr = "x"        #x is the number of file you want to split
-      substr = str(15)
       print('char=', char[0:3], type(int(char[0:3])))   #takes up first three char to compare with substr
       if int(char[0:3])==x: 
          if char.find(substr) != -1:
